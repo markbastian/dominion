@@ -1,4 +1,4 @@
-(defproject clj-canon "0.1.0-SNAPSHOT"
+(defproject dominion "0.1.0-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -31,11 +31,11 @@
                         :source-paths ["src/main/cljs" "src/main/cljc"]
 
                         ;; If no code is to be run, set :figwheel true for continued automagical reloading
-                        :figwheel {:on-jsload "canon.core/on-js-reload"}
+                        :figwheel {:on-jsload "dominion.core/on-js-reload"}
 
-                        :compiler {:main canon.core
+                        :compiler {:main dominion.core
                                    :asset-path "js/compiled/out"
-                                   :output-to "src/main/resources/public/js/compiled/canon.js"
+                                   :output-to "src/main/resources/public/js/compiled/dominion.js"
                                    :output-dir "src/main/resources/public/js/compiled/out"
                                    :source-map-timestamp true}}
                        ;; This next build is an compressed minified build for
@@ -43,8 +43,8 @@
                        ;; lein cljsbuild once min
                        {:id "min"
                         :source-paths ["src/main/cljs" "src/main/cljc"]
-                        :compiler {:output-to "src/main/resources/public/js/compiled/canon.js"
-                                   :main canon.core
+                        :compiler {:output-to "src/main/resources/public/js/compiled/dominion.js"
+                                   :main dominion.core
                                    :optimizations :advanced
                                    :pretty-print false}}]}
 

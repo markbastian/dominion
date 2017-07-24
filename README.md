@@ -1,6 +1,5 @@
-# clj-canon
-An empty Clojure project laid out "the right way" for easy mixing of
-clj, cljs, cljc, java, etc.
+# Dominion
+A Dominion-like game
 
 ## License
 
