@@ -1,6 +1,6 @@
 (ns dominion.core-test
   (:require [clojure.test :refer :all]
-            [dominion.resources :refer :all]))
+            [dominion.core-rules :refer :all]))
 
 #_(deftest a-test
   (testing "FIXME, I fail."
